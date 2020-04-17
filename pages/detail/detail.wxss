@@ -1,0 +1,150 @@
+/* pages/detail/detail.wxss */
+
+page {
+  background: #86b0d0;
+}
+
+.post-header {
+  margin-top: 5px;
+  position: relative;
+  width: 100%;
+  height: 229px;
+  color: aliceblue;
+}
+
+.post-header-image-view {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.post_header_image {
+  height: 219px;
+  padding: 5px;
+  border-radius: 10px; 
+   background: #86b0d0;
+  box-shadow: 18px 18px 32px #7194af, -18px -18px 32px #9bccf1;
+}
+
+.img-mask {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.post_header_title {
+  position: absolute;
+  bottom: 36px;
+  left: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 75%, rgba(0, 0, 0, 0));
+}
+
+.post_image_source {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.body-view {
+  margin-top: 5px;
+  padding-bottom: 100px;
+}
+
+.articles {
+  border-radius: 20px;
+  background: #86b0d0;
+  box-shadow: 5px 5px 10px #6b8da6, -5px -5px 10px #a1d3fa;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.article-view {
+  border-radius: 10px;
+  background: #86b0d0;
+  box-shadow: inset 5px 5px 9px #6b8da6, inset -5px -5px 9px #a1d3fa;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.author-info {
+  border-radius: 10px;
+  padding: 5px;
+  background: #86b0d0;
+  box-shadow: 5px 5px 10px #6b8da6, -5px -5px 10px #a1d3fa;
+}
+
+.art-title {
+  display: block;
+  font-size: 19px;
+  margin: 20px 0;
+  line-height: 1.4em;
+  color: #222;
+  font-weight: bold;
+}
+
+.author-avatar {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.author-text {
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.author-bio {
+  vertical-align: middle;
+  color: #ccc;
+}
+
+.article-content {
+  padding: 10px;
+}
+
+.article-image {
+  border-radius: 10px;
+  width: 80%;
+}
+
+.detail-bar-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.detail-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #799ebb, #8fbcdf);
+  box-shadow: 11px 11px 21px #7296b1, -11px -11px 21px #9acaef;
+}
+
+.button {
+  display: inline-block;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}

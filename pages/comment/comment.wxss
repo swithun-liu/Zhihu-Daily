@@ -1,0 +1,45 @@
+/* pages/comment/comment.wxss */
+
+page {
+  background-color: #86b0d0;
+}
+
+.num {
+  border-radius: 4px;
+  background: #86b0d0;
+  box-shadow: 5px 5px 10px #65849c, -5px -5px 10px #a8dcff;
+  padding: 5px;
+  margin: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.aritile {
+  border-radius: 10px;
+  background: #86b0d0;
+  box-shadow: 5px 5px 10px #7194af, -5px -5px 10px #9bccf1;
+  margin: 10px;
+  padding: 10px;
+  color: rgb(71, 71, 71);
+}
+
+.author-info {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #7194af, -5px -5px 10px #9bccf1;
+  margin: 4px;
+  padding: 5px;
+}
+
+.avatar {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.author {
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 15px;
+}

@@ -1,0 +1,25 @@
+.banner-text {
+  position: fixed;
+  color: aliceblue;
+  bottom: 36px;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+.banner-swiper {
+  height: 239px;
+}
+
+.banner-image-view {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.banner-image {
+  width: 80%;
+  height: 219px;
+  border-radius: 20px;
+  background: #86b0d0;
+  box-shadow: 5px 5px 8px #6b8da6, -5px -5px 8px #a1d3fa;
+}

@@ -1,0 +1,18 @@
+<view>
+  <banner banner="{{banner}}"></banner>
+  <view class="news-list">
+    <block wx:for="{{info_list}}">
+      <text wx:if="{{item.header}}" class="news-header">{{item.header}}</text>
+      <navigator wx:else url="../detail/detail?id={{item.id}}">
+        <view class="news-item">
+          <view class="news-text-view">
+            <text class="news-text">{{item.title}}</text>
+          </view>
+          <view class="news-image-view">
+            <image class="news-image" src="{{item.images[0]}}"></image>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>

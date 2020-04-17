@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "banner":"../../Componets/banner/banner"
+  }
+}

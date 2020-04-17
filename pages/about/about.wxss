@@ -1,0 +1,18 @@
+/* pages/about/about.wxss */
+
+page {
+  background: #86b0d0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 350px;
+  height: 200px;
+  border-radius: 30px;
+  background: #86b0d0;
+  box-shadow: 9px 9px 18px #5a768b, -9px -9px 18px #b2eaff;
+}

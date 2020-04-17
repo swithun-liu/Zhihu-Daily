@@ -1,0 +1,74 @@
+<view>
+  <view class="post-header">
+
+    <view class="post-header-image-view">
+      <image class="post_header_image" src="{{image}}"></image>
+    </view>
+
+    <text class="post_header_title">{{title}}</text>
+    <text class="post_image_source">{{'图片'+image_source}}</text>
+
+  </view>
+  <!-- 问题主体 -->
+  <view class="body-view">
+    <view class="articles" wx:for="{{questions}}">
+      <view class="article-view">
+        <!-- 问题 -->
+        <view>
+          <text class="art-title">{{item.title}}</text>
+        </view>
+      </view>
+      <block wx:for="{{item.answers}}" wx:for-item="answer">
+        <!-- 答题人信息 -->
+        <view class="author-info">
+          <image class="author-avatar" src="{{answer.avatar}}" />
+          <text class="author-text">{{answer.author}}</text>
+          <text class="author-bio">{{answer.bio}}</text>
+        </view>
+        <!-- 回答内容 -->
+        <block wx:for="{{answer.content}}" wx:for-item="content">
+          <view class="article-content" wx:if="{{content.type=='PARAGRAPH'}}">
+            <rich-text nodes="{{content.content}}"></rich-text>
+          </view>
+          <view wx:elif="{{content.type=='IMAGE'}}">
+            <image class="article-image" src="{{content.content}}" />
+          </view>
+        </block>
+      </block>
+    </view>
+  </view>
+
+  <!-- 底部的bar -->
+
+  <view class="detail-bar-container">
+
+    <view class="detail-bar">
+
+      <view class="button">
+        <image class="icon" src="../../images/返回.png" bindtap="onBack"></image>
+        <view>
+          <text>返回</text>
+        </view>
+      </view>
+
+      <view class="button">
+        <image class="icon" src="../../images/点赞.png"></image>
+        <view>
+          <text>{{extra.popularity}}</text>
+        </view>
+      </view>
+
+      <view class="button">
+        <image class="icon" src="../../images/评论.png" bindtap="onComment"></image>
+        <view>
+          <text>{{extra.comments}}</text>
+        </view>
+      </view>
+
+
+    </view>
+
+  </view>
+
+
+</view>

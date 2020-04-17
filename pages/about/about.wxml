@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+
+
+
+<view class="container">
+<image src="../../images/知乎.png" class="image"></image>
+</view>

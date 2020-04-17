@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "banner": "../../Componets/banner/banner"
+  },
+  "enablePullDownRefresh": true
+}
